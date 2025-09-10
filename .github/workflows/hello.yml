@@ -1,0 +1,15 @@
+name: hello_workflow
+
+on:
+  push:
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: main message
+        run: echo "Hello, GitHub Actions!"
+      - name: error message 
+        run: echo "Error!" >&2
+
+        
